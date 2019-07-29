@@ -6,7 +6,7 @@ export default function manageUsers(state = {
   switch (action.type) {
     case 'ADD_USER':
       return state.users.concat(action.user);
- 
+
     default:
       return state;
   }
