@@ -32,7 +32,17 @@ class UserInput extends Component {
   render() {
     return(
       <div>
-        user input
+        <form onSubmit={(event) => this.handleOnSubmit(event)}>
+          <input
+            type="text"
+            value={this.state.username}
+            onChange={(event) => this.handleOnChangeUsername(event)} />
+          <input
+            type="text"
+            value={this.state.hometown}
+            onChange={(event) => this.handleOnChangeHometown(event)} />
+          <input type="submit" />
+        </form>
       </div>
     );
   }
