@@ -21,7 +21,7 @@ class UserInput extends Component {
 
   handleOnSubmit(event) {
     event.preventDefault();
-    //this.props.addReview({text: this.state.text, restaurantId: this.props.restaurant.id});
+    this.props.addUser({username: this.state.username, hometown: this.state.hometown});
     this.setState({
       username: '',
       hometown: ''
