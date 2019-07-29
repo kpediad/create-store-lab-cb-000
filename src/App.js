@@ -16,13 +16,13 @@ const mapStateToProps = state => {
     store: state.users
   };
 };
- 
+
 const mapDispatchToProps = dispatch => {
   return {
     addUser: user => dispatch({ type: 'ADD_USER', user })
   };
 };
- 
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps
